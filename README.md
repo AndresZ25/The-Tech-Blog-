@@ -1,4 +1,4 @@
-# The Tech Blog Module-14
+# The Tech Blog 
 
 
 # Description
@@ -95,6 +95,8 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 11. Test the application's functionality by signing up for a new account, creating, editing, and deleting blog post  Adding comments to posts. Then test user auth. (login, signup, and logout)  
 12. Run git add and commit. Then git push to save your work and done  
 11. last is to delpoy it on Render
+
+Link :  https://the-tech-blog-module-14.onrender.com/ 
 
 
 Here is how it looks:
