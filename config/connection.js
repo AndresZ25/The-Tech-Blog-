@@ -1,11 +1,13 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
+const pg = require('pg'); 
 
 let sequelize;
 
 if (process.env.DB_URL) {
   sequelize = new Sequelize(process.env.DB_URL, {
     dialect: 'postgres',
+    dialectModule: pg,
     dialectOptions: {
       ssl: {
         require: true,
