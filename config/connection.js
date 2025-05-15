@@ -3,11 +3,16 @@ require('dotenv').config();
 
 let sequelize;
 
-console.log("DB_URL:", process.env.DB_URL);
-
-
 if (process.env.DB_URL) {
-  sequelize = new Sequelize(process.env.DB_URL);
+  sequelize = new Sequelize(process.env.DB_URL, {
+    dialect: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
+  });
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -16,7 +21,8 @@ if (process.env.DB_URL) {
     {
       host: 'localhost',
       dialect: 'postgres',
-    },
+    }
   );
 }
+
 module.exports = sequelize;
