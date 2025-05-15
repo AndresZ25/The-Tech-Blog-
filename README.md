@@ -96,7 +96,7 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 12. Run git add and commit. Then git push to save your work and done  
 11. last is to delpoy it on Render
 
-Link :  https://the-tech-blog-module-14.onrender.com/ 
+Link :  https://the-tech-blog-huco.onrender.com 
 
 
 Here is how it looks:
